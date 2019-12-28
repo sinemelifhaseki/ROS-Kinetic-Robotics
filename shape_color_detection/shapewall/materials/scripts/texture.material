@@ -1,0 +1,14 @@
+material shapewall/Image
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../textures/shapes.jpg
+      }
+    }
+  }
+}

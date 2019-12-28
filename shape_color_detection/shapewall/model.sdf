@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+<model name="shapewall">
+  <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <box>
+              <size>2.25 0.15 2.5</size>
+            </box>
+        </geometry>
+        <pose frame=''>0 0 1.25 0 -0 0</pose>
+        <surface>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="visual">
+      <pose frame=''>0 0 1.25 0 -0 0</pose>
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+              <size>2.25 0.15 2.5</size>
+            </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://shapewall/materials/scripts/texture.material</uri>
+            <name>shapewall/Image</name>
+          </script>
+        </material>
+      </visual>
+      <pose frame=''>0 -6.35 0 0 -0 0</pose>
+    </link>
+  </model>
+</sdf>
